@@ -51,11 +51,14 @@ Here is the folder structure of this app.
     |-- assets/
     |-- components/
       |--- canvas/
+      |--- Floatingcontact/
       |--- about.tsx
+      |--- Academics.tsx
       |--- banner.tsx
       |--- contact.tsx
       |--- experience.tsx
       |--- feedbacks.tsx
+      |--- FloatingDownloadCV.tsx
       |--- footer.tsx
       |--- hero.tsx
       |--- index.ts
@@ -82,6 +85,7 @@ Here is the folder structure of this app.
   |- bun.lock
   |- index.html
   |- netlify.toml
+  |- package-lock.json
   |- package.json
   |- postcss.config.cjs
   |- tailwind.config.ts
@@ -184,12 +188,14 @@ Useful resources and dependencies that are used in 3D Portfolio.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.5.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.40.0
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.17.0
 - [maath](https://www.npmjs.com/package/maath): ^0.10.8
 - [postcss](https://www.npmjs.com/package/postcss): ^8.5.15
 - [react](https://www.npmjs.com/package/react): ^19.2.6
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19.2.6
+- [react-icons](https://www.npmjs.com/package/react-icons): ^5.6.0
+- [react-parallax-tilt](https://www.npmjs.com/package/react-parallax-tilt): ^1.7.330
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^7.15.1
-- [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.7
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
