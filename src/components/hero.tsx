@@ -26,8 +26,8 @@ export const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Saroj</span>
           </h1>
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            Full Stack Developer specializing in building responsive, scalable, and<br className="sm:block hidden" /> high-performance digital products.
-          </p>
+  Full Stack Developer crafting modern and scalable web applications.
+</p>
         </div>
       </div>
 
