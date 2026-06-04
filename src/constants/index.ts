@@ -36,6 +36,17 @@ import {
   linkedin,
   twitter,
   github,
+  bootstrap,
+  expressjs,
+  linux,
+  nginx,
+  nextjs,
+  mysql,
+  java,
+  python,
+  facebook,
+  instagram,
+  
 } from "../assets";
 
 // Navbar Links
@@ -46,8 +57,23 @@ export const NAV_LINKS = [
     link: null,
   },
   {
+    id: "education",
+    title: "Education",
+    link: null,
+  },
+  {
     id: "work",
     title: "Work",
+    link: null,
+  },
+  {
+    id: "skills",
+    title: "Skills",
+    link: null,
+  },
+  {
+    id: "projects",
+    title: "Projects",
     link: null,
   },
   {
@@ -55,31 +81,28 @@ export const NAV_LINKS = [
     title: "Contact",
     link: null,
   },
-  {
-    id: "source-code",
-    title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio",
-  },
+  
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Web Application Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "API & Backend Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Cloud Deployment",
+    icon: web,
   },
+  
 ] as const;
 
 // Technologies
@@ -92,45 +115,65 @@ export const TECHNOLOGIES = [
     name: "CSS 3",
     icon: css,
   },
+  
+   {
+    name: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  
+  
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Express JS",
+    icon: expressjs,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Nginx",
+    icon: nginx,
   },
   {
     name: "docker",
@@ -141,57 +184,19 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Software Developer",
+    company_name: "Ikontel Solutions Pvt Ltd",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing scalable web applications using the MERN Stack, Python, and MySQL to deliver secure and high-performance digital solutions.",
+      "Designing and integrating robust APIs, business logic, and database systems to ensure seamless application functionality.",
+      "Managing application deployments on Linux VPS servers, including server configuration, SSL setup, and production maintenance.",
+      "Working closely with designers, project managers, and developers to transform business requirements into user-focused products.",
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ] as const;
 
 // Testimonials
@@ -225,21 +230,25 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "Disney+ Clone",
+    name: "HRMS",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "An HRMS solution designed to simplify workforce management by automating employee onboarding, attendance, leave requests, payroll operations, and administrative processes within a centralized system.",
     tags: [
       {
-        name: "react",
+        name: "MERN",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "MongoDB",
+        color: "orange-text-gradient",
       },
     ],
     image: project1,
@@ -247,20 +256,24 @@ export const PROJECTS = [
     live_site_link: "https://clonedisneyplus.web.app",
   },
   {
-    name: "Golds Gym",
+    name: "E-Commerce Platform",
     description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
+      "A full-featured e-commerce solution designed to simplify online shopping with product management, secure payments, order tracking, and an intuitive user experience across all devices.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
     ],
@@ -269,114 +282,105 @@ export const PROJECTS = [
     live_site_link: "https://fitness-gym-react.netlify.app",
   },
   {
-    name: "Shoppy",
+    name: "BSP Project Solutions",
     description:
-      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
+      "A solar energy management platform that simplifies customer engagement, project monitoring, service coordination, and business operations while improving efficiency and accessibility.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "syncfusion",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
     ],
     image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app",
+    source_code_link: "https://github.com/sanidhyy/bsp-project",
+    live_site_link: "",
   },
-  {
-    name: "TikTok Clone",
+   {
+    name: "Advenza Tours & Travel",
     description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
+      "A scalable travel solutions platform built to connect travelers with curated tour packages, seamless booking services, and personalized travel experiences. The platform simplifies trip planning, destination discovery, and customer engagement through an intuitive and user-friendly digital interface.",
     tags: [
       {
-        name: "nextjs",
+        name: "PHP",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "MySQL",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "VPS",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: project5,
+    source_code_link: "",
+    live_site_link: "",
+  },
+  {
+    name: "Modern Solar 2.0",
+    description:
+      "A modern solar solutions platform that enables customers to explore renewable energy services, submit inquiries, and manage solar projects through an intuitive digital experience.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
     ],
     image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app",
+    source_code_link: "",
+    live_site_link: "",
   },
-  {
-    name: "Cryptoverse",
-    description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app",
-  },
-  {
-    name: "Travel Advisor",
-    description:
-      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app",
-  },
+  
 ] as const;
 
 export const SOCIALS = [
+   {
+    name: "Facebook",
+    icon: facebook,
+    link: "https://www.facebook.com/sarojkumar.bapun.1/",
+  },
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com",
+    name: "Instagram",
+    icon: instagram,
+    link: "https://www.instagram.com/_im_saroj_/",
   },
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://x.com/_sanidhyy",
+    link: "https://www.linkedin.com/in/sarojkumarmallik/",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/SarojKumarMallik/",
   },
 ] as const;

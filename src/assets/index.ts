@@ -25,6 +25,15 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
 
+import bootstrap from "./tech/bootstrap.png";
+import expressjs from "./tech/Express.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
+import mysql from "./tech/mysql.png";
+import nginx from "./tech/nginx.png";
+import nextjs from "./tech/nextjs.png";
+import linux from "./tech/linux.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -45,6 +54,8 @@ import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
+import instagram from "./socials/instagram.png";
+import facebook from "./socials/facebook.svg";
 
 export {
   backend,
@@ -86,4 +97,14 @@ export {
   youtube,
   linkedin,
   twitter,
+  bootstrap,
+  expressjs,
+  python,
+  java,
+  mysql,
+  nginx,
+  nextjs,
+  linux,
+  instagram,
+  facebook,
 };

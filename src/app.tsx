@@ -13,6 +13,11 @@ import {
 } from "./components";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
+import Academics from "./components/Academics";
+import FloatingDownloadCV from "./components/FloatingDownloadCV";
+import Floatingcontact from "./components/Floatingcontact/Floatingcontact";
+
+
 
 // App
 const App = () => {
@@ -27,10 +32,14 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Academics/>
         <Experience />
         <Tech />
         <Works />
         <Feedbacks />
+        <FloatingDownloadCV/>
+        <Floatingcontact/>
+        
 
         {/* Contact */}
         <div className="relative z-0">

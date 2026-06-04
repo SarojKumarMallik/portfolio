@@ -1,4 +1,4 @@
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { SERVICES } from "../constants";
@@ -46,7 +46,7 @@ export const About = () => {
         {/* Title */}
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <h2 className={styles.sectionHeadText}>ABOUT ME</h2>
         </motion.div>
 
         {/* Body */}
@@ -54,11 +54,7 @@ export const About = () => {
           variants={fadeIn(undefined, undefined, 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript and
-          Javascript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          Full Stack Developer with 2+ years of experience delivering end-to-end web solutions that blend performance, scalability, and exceptional user experience. From designing intuitive interfaces to building powerful backend systems, I enjoy creating products that solve real-world challenges. My passion for technology, problem-solving, and continuous improvement drives me to build solutions that create meaningful value and lasting impact.
         </motion.p>
 
         {/* Service Card */}
